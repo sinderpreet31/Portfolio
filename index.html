@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/918a43bb4f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class= "container">
+        <nav>
+            <img src="Images/INderpreet Singh-3.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Analyst</p>
+            <h1>Hi, I'm <span>Inder</span><br>based in Canada</h1>
+    </div>
+</div>
+<!------------------about------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/Aboutme.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>With a solid three-year background in data analytics, I specialize in Power BI, SQL, 
+                   stakeholder management, project management, and business analysis. My proficiency in Power BI and SQL allows 
+                   for effective data visualization and manipulation, turning complex data into actionable insights for strategic decision-making. 
+                   I excel in fostering collaboration and communication across teams, managing projects from start 
+                   to finish with a keen focus on aligning outcomes with organizational goals. Committed to ongoing learning, 
+                   I continuously explore emerging technologies to enhance my expertise. My proactive approach and dedication 
+                   to excellence drive significant value and efficiencies in every endeavor I undertake.
+                </p>
+
+                <div class ="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Analysis and Interpretation</span><br>
+                            SQL (Structured Query Language), Python (Libraries such as Pandas, NumPy), R (Packages like dplyr, tidyr), Microsoft Excel & Spreadsheets (Advanced functions, pivot tables), Statistical analysis techniques (Regression, Hypothesis testing)
+                        </li>
+                        <li><span>Data Visualization</span><br>
+                            Tableau, Microsoft Power BI, ggplot2 (in R), Matplotlib/Seaborn (in Python), D3.js (for web-based visualization)
+                        </li>
+                        <li><span>Data Cleaning and Preprocessing</span><br>
+                            Excel (Data cleaning functions), Python (Pandas for data manipulation), SQL (for data cleaning queries), OpenRefine
+                        </li>
+                        <li><span>Business Acumen</span><br>
+                            Understanding of key performance indicators (KPIs), Domain-specific knowledge (finance, marketing, healthcare, etc.), Ability to translate business requirements into analytical solutions, Familiarity with business intelligence tools and methodologies, Effective communication and presentation skills
+                        </li>
+                        <li><span>Problem-Solving and Critical Thinking</span><br>
+                            Logical reasoning skills, Ability to identify patterns and trends in data, Structured problem-solving methodologies (like Six Sigma or Lean), Creativity in finding innovative solutions, Attention to detail and accuracy in analysis
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="tab-contents" id ="experience">
+                    <ul>
+                        <li><span>2024-Present</span><br>Data Analyst at Upwork</li>
+                        <li><span>2023-2024</span><br>Technical Support Analyst at Concentrix (Nissan Project,Canada)</li>
+                        <li><span>2019-2023</span><br>Senior Quality Analyst at Concentrix (Google Project, Malaysia)</li>
+                        <li><span>2017-2019</span><br>Data Analyst at IBM</li>
+                        <li><span>2015-2017</span><br>Data Operations Analyst at Mohinder Singh & Co.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "education">
+                    <ul>
+                        <li><span>Bachelor's of Technology (B.Tech)</span><br>Lovely Professional University</li>
+                        <li><span>Diploma in Engineering (E.C.E)</span><br>Punjab Technical Institute</li>
+                    </ul>
+
+
+                </div>
+
+            </div>    
+        </div>
+    </div>
+</div> 
+<!---------Services------- -->   
+<div id ="certifications">
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-google"></i>
+                <h2>Google Data Analystics Professional Certification</h2>
+                <p>The Google Data Analytics Professional Certificate represents comprehensive training in data analytics through eight practical courses. It validates my proficiency with key tools like spreadsheets, SQL, Tableau, and R. This certification reflects a deep understanding of data preparation, analysis, and visualization, and equips me with the skills to transform data into insightful, strategic decisions.</p>
+                <a href="https://drive.google.com/drive/folders/1R4tXcdJyq55UF8Vid1KwmfdHB9kCeXqy?usp=sharing">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Analystics by Coding Invaders</h2>
+                <p>The Coding Invader's Data Analytics Certification is an immersive 8-month program that equips graduates with in-depth knowledge and practical skills in Sheets, advanced SQL, Power BI, and Python. Complemented by multiple capstone projects and case studies, the curriculum provides hands-on experience, ensuring proficiency in data manipulation, analysis, and visualization. This extensive training prepares analysts to tackle real-world data challenges and deliver actionable insights.</p>
+                <a href="https://drive.google.com/drive/folders/1R4tXcdJyq55UF8Vid1KwmfdHB9kCeXqy?usp=sharing">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2>Business Analytics Certification</h2>
+                <p>The Business Analysis Foundation Certification from LinkedIn Learning is a specialized program designed to build the core skills essential for effective business analysis. It covers foundational knowledge in identifying business needs, shaping project outputs, and driving strategic solutions. This certification ensures a strong understanding of best practices in business analysis and equips professionals with the tools to enhance organizational decision-making.</p>
+                <a href="https://drive.google.com/drive/folders/1OB8tzKH4JtX78T-O9ZU9hs9Ep9INO6kt?usp=sharing">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+   
+<!------------Projects-------- --->
+
+<div id ="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Bank Loan Analysis.pdf">
+                <div class="layer">
+                    <h3>Bank Loan Analysis</h3>
+                    <p>The "Comprehensive Bank Loan Analysis" project utilizes SQL and Power BI to explore bank loan data, focusing on uncovering insights into applications, funding, repayments, and borrower profiles. It aims to highlight trends, assess financial health through key metrics, and support strategic loan service decisions. This concise analysis provides a foundation for informed, data-driven financial planning and strategy development.</p>
+                    <a href="https://github.com/sinderpreet31/Bank_loan_analysis-SQL-PowerBI-"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/HR Analystics (PowerBI).pdf">
+                <div class="layer">
+                    <h3>HR Analystics</h3>
+                    <p>Utilizing Power BI, this project introduces an HR Analytics Dashboard to analyze workforce dynamics, focusing on attrition rates, demographics, and salary trends. It enables targeted retention strategies by providing insights into employee profiles and behaviors. This tool empowers HR professionals to enhance engagement and retention, promoting a healthier workplace culture through strategic data utilization.</p>
+                    <a href="https://github.com/sinderpreet31/HR_Analytics_PowerBI"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Cyclic.png">
+                <div class="layer">
+                    <h3>Cyclistic Project</h3>
+                    <p>This project analyzes Cyclistic's bike-share data to identify usage differences between casual riders and annual members. Leveraging Motivate Inc.'s dataset, the aim is to craft strategies converting casual riders to enhance profitability. Through data analysis and visualization, actionable insights inform strategic improvements in operations and customer engagement, showcasing data analytics' role in business decision-making.</p>
+                    <a href="https://www.kaggle.com/datasets/sinderpreet/datainsight-google-analytics-capstone-project"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.kaggle.com/sinderpreet" class="btn">See more</a>
+    </div>
+</div>
+<!----------Contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>  inderpreetsingh3108@gmail.com</p>
+                <p><i class="fa-regular fa-phone"></i> +1(289)4898301</p>
+                <div class="social-icons">
+                    <a href="https://github.com/sinderpreet31"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/inderpreetsinghda/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.kaggle.com/sinderpreet"><i class="fa-brands fa-kaggle"></i></a>
+                </div>
+                <a href="Images/Inder.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name ="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Inder. Made with <i class="fa-solid fa-heart"></i> by Visual Studio</p>
+
+    </div>
+
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby142NK8hl7I-vYyrwDV2hcrqsKYrR3ohvffDZ3vIGt6yWrQZcGjnWt_lDYhjF22JCi/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+      
+</body>
+</html>
